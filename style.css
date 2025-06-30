@@ -1,0 +1,153 @@
+
+:root {
+  --marrom-escuro: #4B3621;
+  --creme-claro: #f5f0e1;
+  --dourado: #CBAF87;
+  --verde-musgo: #3E5E45;
+  --branco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--creme-claro);
+  color: var(--marrom-escuro);
+}
+
+header {
+  background-color: var(--marrom-escuro);
+  color: var(--branco);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--dourado);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: var(--marrom-escuro);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.banner {
+  background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484e9') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--branco);
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.btn-pedido {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  background-color: var(--verde-musgo);
+  color: var(--branco);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.categorias button {
+  background-color: var(--dourado);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.produtos {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  background-color: var(--branco);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.produto h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.produto button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--verde-musgo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carrinho {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: var(--marrom-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: var(--dourado);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .categorias {
+    flex-wrap: wrap;
+  }
+}
